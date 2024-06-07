@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcular média</title>
+</head>
+<body>
+    Nota 1: <input  type= "number" id="valor1">
+    Nota 2: <input  type= "number" id="valor2">
+    Nota 3: <input  type= "number" id="valor3">
+    <button onclick="media()">Calcular a média</button>
+    <h3 id="resultado">A sua média é: </h3>
+    <script>
+
+    function media(){
+
+        let v1= document.getElementById("valor1").value
+        let v2= document.getElementById("valor2").value
+        let v3= document.getElementById("valor3").value
+        let res = (Number(v1) + Number(v2) + Number(v3)) / 3
+        document.getElementById("resultado").innerHTML = "Sua média é: " + res.toFixed(2)
+    }
+
+    </script>
+</body>
+</html>
